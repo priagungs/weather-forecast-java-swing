@@ -1,6 +1,6 @@
 # Weather Forecast App
 ## Open Weather Map API
-Based on wikipedia definition, API or Application Programming Interface is 
+Based on wikipedia definition, API or Application Programming Interface is
 > A set of subroutine definitions, protocols, and tools for building application software.
 
 API helps software developer to gather the data from certain application/technology. Usually, the data format to communicate through API is a kind of semistructured format such as XML or JSON.
@@ -48,5 +48,6 @@ This package contains classes which is used for gathering data from Open Weather
 - [ ] class DateLabel
 - [ ] class TempPredictionLabel
 - [ ] class WeatherPredictionLabel
+- [ ] class PredictionController
 ## weather.forecast.model
 - [ ] class WeatherData
