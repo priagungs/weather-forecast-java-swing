@@ -12,29 +12,29 @@ Open Weather Map API is an API that provides weather data. It can provides sever
 - UV index
 - etc.
 
-## Package Structure
+# Package Structure
 Using MVC design pattern approach, I pack the classes in several packages.
-# weather.forecast
+## weather.forecast
 This is the main package of this app. It contains main class and other packages that i will explain afterwards.
-# weather.forecast.MainMenu
+## weather.forecast.MainMenu
 This is the package that contains several classes which is representing view and controller in the very first when app is executed.
-# weather.forecast.DetailedCity
+## weather.forecast.DetailedCity
 This package contains several classes which is representating view and controller of detailed information of specific city such as temperature, weather, wind, etc.
-# weather.forecast.prediction
+## weather.forecast.prediction
 This package contains several classes which is representating view and controller of weather prediction in specific city for the next view days
-# weather.forecast.model
+## weather.forecast.model
 This package contains classes which is used for gathering data from Open Weather Map API and send it back to views or controller
 
-## Progress Checklist
-# weather.forecast
+# Progress Checklist
+## weather.forecast
 - [ ] class WeatherForecast
-# weather.forecast.MainMenu
+## weather.forecast.MainMenu
 - [ ] class SearchCityBox
 - [ ] class SearchCityButton
 - [ ] class MainMenuPaner
 - [ ] class CityList
 - [ ] class MainMenuController
-# weather.forecast.DetailedCity
+## weather.forecast.DetailedCity
 - [ ] class DetailedCityPanel
 - [ ] class CityNameLabel
 - [ ] class TempDetailedLabel
@@ -43,10 +43,10 @@ This package contains classes which is used for gathering data from Open Weather
 - [ ] class WindDirectionLabel
 - [ ] class PredictionButton
 - [ ] class DetailedCityController
-# weather.forecast.prediction
+## weather.forecast.prediction
 - [ ] class PredictionPanel
 - [ ] class DateLabel
 - [ ] class TempPredictionLabel
 - [ ] class WeatherPredictionLabel
-# weather.forecast.model
+## weather.forecast.model
 - [ ] class WeatherData
