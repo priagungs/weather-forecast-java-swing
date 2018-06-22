@@ -3,26 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/SearchClickListener.java</file>
             <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/model/WeatherData.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/DetailedCityPanel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/CityNameLabel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/SearchCityBox.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/MainMenuController.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/WeatherForecast.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/prediction/WeatherPredictionLabel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/prediction/PredictionController.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/WeatherLabel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/WindSpeedLabel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/CityList.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/WindDirectionLevel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/TempLabel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/DetailedCityController.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/MainMenuPanel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/SearchCityButton.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/prediction/PredictionPanel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/prediction/DateLabel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/prediction/TempPredictionLabel.java</file>
-            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/DetailedCity/PredictionButton.java</file>
+            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/SearchPanel.java</file>
+            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/MainMenuFrame.java</file>
+            <file>file:/D:/Kuliah/Teknik%20Informatika/Lab/Labpro/Tugas2/weather-forecast/src/weather/forecast/MainMenu/CityResultDialog.java</file>
         </group>
     </open-files>
 </project-private>

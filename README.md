@@ -29,11 +29,10 @@ This package contains classes which is used for gathering data from Open Weather
 ## weather.forecast
 - [ ] class WeatherForecast
 ## weather.forecast.MainMenu
-- [ ] class SearchCityBox
-- [ ] class SearchCityButton
-- [ ] class MainMenuPaner
-- [ ] class CityList
-- [ ] class MainMenuController
+- [x] class MainMenuFrame
+- [x] class SearchClickListener
+- [x] class SearchPanel
+- [ ] class CityResultDialog
 ## weather.forecast.DetailedCity
 - [ ] class DetailedCityPanel
 - [ ] class CityNameLabel
