@@ -5,7 +5,13 @@
  */
 package weather.forecast.MainMenu;
 
+import java.util.ArrayList;
+import javax.json.JsonArray;
 import javax.json.JsonObject;
+import javax.json.JsonValue;
+import javax.swing.AbstractListModel;
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
 
 /**
  *
@@ -21,8 +27,20 @@ public class CityResultDialog extends javax.swing.JDialog {
         currData = parent.getDataCurrWeather();
         forecastData = parent.getDataForecastWeather();
         initComponents();
-        String citiesName = "";
-        for()
+        ArrayList<String> li = new ArrayList<>();
+        for (JsonValue el : currData){
+            String listval = el.asJsonObject().getString("name");
+            listval += " (" + el.asJsonObject().getJsonObject("coord").getInt("lon");
+            listval += ", " + el.asJsonObject().getJsonObject("coord").getInt("lat") + ")";
+            li.add(listval);
+        }
+        String[] strs = new String[li.size()];
+        li.toArray(strs);
+        cityList.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = strs;
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
         setVisible(false);
     }
 
@@ -89,19 +107,19 @@ public class CityResultDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private JsonObject currData;
-    public JsonObject getCurrData(){
+    private JsonArray currData;
+    public JsonArray getCurrData(){
         return currData;
     }
-    public void setCurrData(JsonObject currData){
+    public void setCurrData(JsonArray currData){
         this.currData = currData;
     }
     
-    private JsonObject forecastData;
-    public JsonObject getForecastData(){
+    private JsonArray forecastData;
+    public JsonArray getForecastData(){
         return forecastData;
     }
-    public void setForecastData(JsonObject forecastData){
+    public void setForecastData(JsonArray forecastData){
         this.forecastData = forecastData;
     }
             

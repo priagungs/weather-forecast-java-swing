@@ -21,19 +21,19 @@ import weather.forecast.model.WeatherData;
  * @author Priagung Satyagama
  */
 public class MainMenuFrame extends JFrame {
-    private JsonObject dataCurrWeather;
-    public JsonObject getDataCurrWeather(){
+    private JsonArray dataCurrWeather;
+    public JsonArray getDataCurrWeather(){
         return dataCurrWeather;
     }
-    public void setDataCurrWeather(JsonObject dataCurrWeather){
+    public void setDataCurrWeather(JsonArray dataCurrWeather){
         this.dataCurrWeather = dataCurrWeather;
     }
     
-    private JsonObject dataForecastWeather;
-    public JsonObject getDataForecastWeather(){
+    private JsonArray dataForecastWeather;
+    public JsonArray getDataForecastWeather(){
         return dataForecastWeather;
     }
-    public void setDataForecastWeather(JsonObject dataForecastWeather){
+    public void setDataForecastWeather(JsonArray dataForecastWeather){
         this.dataForecastWeather = dataForecastWeather;
     }
     
@@ -57,13 +57,16 @@ public class MainMenuFrame extends JFrame {
         
         SearchClickListener searchClickListener = new SearchClickListener(this);
         searchPanel = new SearchPanel(searchClickListener);
-        cityResultDialog = new CityResultDialog(this, true);
         
         Container container = getContentPane();
         container.add(searchPanel, BorderLayout.CENTER);
 //        container.add(cityResultPanel, BorderLayout.CENTER);
         
         setVisible(true);
+    }
+    
+    public void initializeCityResultDialog(){
+        cityResultDialog = new CityResultDialog(this, true);
     }
     
     public static void main(String[] args){
