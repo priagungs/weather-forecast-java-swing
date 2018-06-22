@@ -1,9 +1,11 @@
+package weather.forecast.main;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package weather.forecast.MainMenu;
+
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -14,6 +16,8 @@ import javax.json.*;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import weather.forecast.MainMenu.CityResultDialog;
+import weather.forecast.MainMenu.SearchPanel;
 import weather.forecast.model.WeatherData;
 
 /**
@@ -45,6 +49,23 @@ public class MainMenuFrame extends JFrame {
     private CityResultDialog cityResultDialog;
     public CityResultDialog getCityResultDialog(){
         return cityResultDialog;
+    }
+   
+    private JsonObject currSelectedCity;
+    public JsonObject getCurrSelectedCity(){
+        return currSelectedCity;
+    }
+    public void setCurrSelectedCity(JsonObject obj){
+        currSelectedCity = obj;
+    }
+    
+    private JsonObject forecastSelectedCity;
+    public JsonObject getForecastSelectedCity(){
+        return forecastSelectedCity;
+    }
+    
+    public void setForecastSelectedCity(JsonObject obj){
+        forecastSelectedCity = obj;
     }
     
     public MainMenuFrame(String title){

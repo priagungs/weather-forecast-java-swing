@@ -5,6 +5,7 @@
  */
 package weather.forecast.MainMenu;
 
+import weather.forecast.main.MainMenuFrame;
 import java.util.ArrayList;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
@@ -25,14 +26,15 @@ public class CityResultDialog extends javax.swing.JDialog {
     public CityResultDialog(MainMenuFrame parent, boolean modal) {
         super(parent, modal);
         currData = parent.getDataCurrWeather();
-        forecastData = parent.getDataForecastWeather();
         initComponents();
         ArrayList<String> li = new ArrayList<>();
-        for (JsonValue el : currData){
-            String listval = el.asJsonObject().getString("name");
-            listval += " (" + el.asJsonObject().getJsonObject("coord").getInt("lon");
-            listval += ", " + el.asJsonObject().getJsonObject("coord").getInt("lat") + ")";
-            li.add(listval);
+        if(currData != null){
+            for (JsonValue el : currData){
+                String listval = el.asJsonObject().getString("name");
+                listval += " (" + el.asJsonObject().getJsonObject("coord").getInt("lon");
+                listval += ", " + el.asJsonObject().getJsonObject("coord").getInt("lat") + ")";
+                li.add(listval);
+            }    
         }
         String[] strs = new String[li.size()];
         li.toArray(strs);

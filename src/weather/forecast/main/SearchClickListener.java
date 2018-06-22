@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package weather.forecast.MainMenu;
+package weather.forecast.main;
 
+import weather.forecast.main.MainMenuFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
@@ -17,7 +18,7 @@ import java.net.URLConnection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.json.*;
-import weather.forecast.model.*;
+import weather.forecast.model.WeatherData;
 
 /**
  *

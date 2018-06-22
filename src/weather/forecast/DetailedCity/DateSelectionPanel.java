@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package weather.forecast.prediction;
+package weather.forecast.DetailedCity;
 
 /**
  *
  * @author Priagung Satyagama
  */
-public class PredictionPanel extends javax.swing.JPanel {
+public class DateSelectionPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form PredictionPanel
+     * Creates new form DateSelectionPanel
      */
-    public PredictionPanel() {
+    public DateSelectionPanel() {
         initComponents();
     }
 

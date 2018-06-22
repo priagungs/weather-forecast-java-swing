@@ -24,7 +24,7 @@ import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
 import javax.json.JsonValue;
-import weather.forecast.MainMenu.SearchClickListener;
+import weather.forecast.main.SearchClickListener;
 
 /**
  *

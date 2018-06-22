@@ -14,39 +14,28 @@ Open Weather Map API is an API that provides weather data. It can provides sever
 
 # Package Structure
 Using MVC design pattern approach, I pack the classes in several packages.
-## weather.forecast
+## weather.forecast.main
 This is the main package of this app. It contains main class and other packages that i will explain afterwards.
 ## weather.forecast.MainMenu
 This is the package that contains several classes which is representing view and controller in the very first when app is executed.
 ## weather.forecast.DetailedCity
 This package contains several classes which is representating view and controller of detailed information of specific city such as temperature, weather, wind, etc.
-## weather.forecast.prediction
-This package contains several classes which is representating view and controller of weather prediction in specific city for the next view days
 ## weather.forecast.model
 This package contains classes which is used for gathering data from Open Weather Map API and send it back to views or controller
 
 # Progress Checklist
-## weather.forecast
-- [ ] class WeatherForecast
-## weather.forecast.MainMenu
+## weather.forecast.main
 - [x] class MainMenuFrame
 - [x] class SearchClickListener
+- [x] class SelectCityListener
+- [ ] class ViewForecastListener
+## weather.forecast.MainMenu
 - [x] class SearchPanel
-- [ ] class CityResultDialog
+- [x] class CityResultDialog
 ## weather.forecast.DetailedCity
-- [ ] class DetailedCityPanel
-- [ ] class CityNameLabel
-- [ ] class TempDetailedLabel
-- [ ] class WeatherDetailedLabel
-- [ ] class WindSpeedLabel
-- [ ] class WindDirectionLabel
-- [ ] class PredictionButton
-- [ ] class DetailedCityController
-## weather.forecast.prediction
-- [ ] class PredictionPanel
-- [ ] class DateLabel
-- [ ] class TempPredictionLabel
-- [ ] class WeatherPredictionLabel
-- [ ] class PredictionController
+- [x] class WeatherDetailPanel
+- [ ] class CurrentWeatherDialog
+- [ ] class DateSelectionPanel
+- [ ] class DetailedWeatherDialog
 ## weather.forecast.model
-- [ ] class WeatherData
+- [x] class WeatherData
