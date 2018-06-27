@@ -33,6 +33,8 @@ public class SelectCityListener implements ActionListener{
         int idxCity = findIdxCity();
         setSelectedCity(idxCity);
         frame.getCityResultDialog().setVisible(false);
+        frame.initializeCurrentWeatherDialog();
+        frame.getCurrentWeatherDialog().setVisible(true);
         
         
     }

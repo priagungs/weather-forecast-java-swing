@@ -45,7 +45,6 @@ public class WeatherData {
         LinkedList<Integer> idCityList = searchIdCity(query);
         JsonArrayBuilder currDataBuilder = Json.createArrayBuilder();
         JsonArrayBuilder forecastDataBuilder = Json.createArrayBuilder();
-        System.out.println(idCityList);
         if (!idCityList.isEmpty()){
             for (Integer id : idCityList){
                 // read current data
@@ -70,7 +69,6 @@ public class WeatherData {
             currData = currDataBuilder.build();
             forecastData = forecastDataBuilder.build();
         }
-        System.out.println(currData);
     }
     
     private LinkedList<Integer> searchIdCity(String cityname) throws FileNotFoundException, IOException{

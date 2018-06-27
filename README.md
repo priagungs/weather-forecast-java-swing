@@ -34,8 +34,8 @@ This package contains classes which is used for gathering data from Open Weather
 - [x] class CityResultDialog
 ## weather.forecast.DetailedCity
 - [x] class WeatherDetailPanel
-- [ ] class CurrentWeatherDialog
+- [x] class CurrentWeatherDialog
 - [ ] class DateSelectionPanel
-- [ ] class DetailedWeatherDialog
+- [ ] class ForecastWeatherDialog
 ## weather.forecast.model
 - [x] class WeatherData

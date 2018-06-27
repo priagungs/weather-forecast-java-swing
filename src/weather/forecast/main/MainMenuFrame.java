@@ -11,11 +11,16 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import javax.json.*;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
+import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+import weather.forecast.DetailedCity.CurrentWeatherDialog;
+import weather.forecast.DetailedCity.ForecastWeatherDialog;
 import weather.forecast.MainMenu.CityResultDialog;
 import weather.forecast.MainMenu.SearchPanel;
 import weather.forecast.model.WeatherData;
@@ -50,6 +55,11 @@ public class MainMenuFrame extends JFrame {
     public CityResultDialog getCityResultDialog(){
         return cityResultDialog;
     }
+    
+    private CurrentWeatherDialog currentWeatherDialog;
+    public CurrentWeatherDialog getCurrentWeatherDialog(){
+        return currentWeatherDialog;
+    }
    
     private JsonObject currSelectedCity;
     public JsonObject getCurrSelectedCity(){
@@ -62,6 +72,11 @@ public class MainMenuFrame extends JFrame {
     private JsonObject forecastSelectedCity;
     public JsonObject getForecastSelectedCity(){
         return forecastSelectedCity;
+    }
+    
+    private SelectCityListener selectCityListener;
+    public SelectCityListener getSelectCityListener(){
+        return selectCityListener;
     }
     
     public void setForecastSelectedCity(JsonObject obj){
@@ -90,7 +105,20 @@ public class MainMenuFrame extends JFrame {
         cityResultDialog = new CityResultDialog(this, true);
     }
     
+    public void initializeCurrentWeatherDialog(){
+        currentWeatherDialog = new CurrentWeatherDialog(this, true);
+    }
+    
+    public void initializeSelectCityListener(ArrayList<String> list_selection, JList<String> list_city){
+        selectCityListener = new SelectCityListener(this, list_selection, list_city);
+    }
+    
+    
     public static void main(String[] args){
-        MainMenuFrame frame = new MainMenuFrame("Weather Forecast");
+        SwingUtilities.invokeLater(new Runnable(){
+            public void run(){
+                MainMenuFrame frame = new MainMenuFrame("Weather Forecast");
+            }
+        });
     }
 }

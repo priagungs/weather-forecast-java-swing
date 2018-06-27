@@ -13,6 +13,7 @@ import javax.json.JsonValue;
 import javax.swing.AbstractListModel;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
+import weather.forecast.main.SelectCityListener;
 
 /**
  *
@@ -43,6 +44,8 @@ public class CityResultDialog extends javax.swing.JDialog {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        parent.initializeSelectCityListener(li, cityList);
+        selectBtn.addActionListener(parent.getSelectCityListener());
         setVisible(false);
     }
 

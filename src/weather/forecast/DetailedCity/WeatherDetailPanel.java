@@ -5,8 +5,10 @@
  */
 package weather.forecast.DetailedCity;
 
+import java.awt.Color;
 import java.text.DecimalFormat;
 import javax.json.JsonObject;
+import javax.swing.BorderFactory;
 
 /**
  *
@@ -23,11 +25,17 @@ public class WeatherDetailPanel extends javax.swing.JPanel {
         cityName.setText(cityname);
         pressure.setText(d.format(data.getJsonObject("main").getJsonNumber("pressure").doubleValue()));
         temperature.setText(d.format(data.getJsonObject("main").getJsonNumber("temp").doubleValue()-273));
-        weatherDescription.setText(data.getJsonObject("weather").getString("description"));
-        weatherMain.setText(data.getJsonObject("weather").getString("main"));
+        weatherDescription.setText(data.getJsonArray("weather").getJsonObject(0).getString("description"));
+        weatherMain.setText(data.getJsonArray("weather").getJsonObject(0).getString("main"));
         final String DEGREE = "\u00b0";
-        windDirection.setText(d.format(data.getJsonObject("wind").getJsonNumber("deg").doubleValue()) + DEGREE);
-        windSpeed.setText(d.format(data.getJsonObject("wind").getJsonNumber("speed").doubleValue()));
+        if (data.getJsonObject("wind").getJsonNumber("deg") != null){
+            windDirection.setText(d.format(data.getJsonObject("wind").getJsonNumber("deg").doubleValue()) + DEGREE);     
+        }
+        else {
+            windDirection.setText("");
+        }
+        windSpeed.setText(d.format(data.getJsonObject("wind").getJsonNumber("speed").doubleValue()) + " m/s");
+        revalidate();
     }
 
     /**
