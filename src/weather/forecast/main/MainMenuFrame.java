@@ -69,6 +69,11 @@ public class MainMenuFrame extends JFrame {
         currSelectedCity = obj;
     }
     
+    private ForecastWeatherDialog forecastWeatherDialog;
+    public ForecastWeatherDialog getForecastWeatherDialog(){
+        return forecastWeatherDialog;
+    }
+    
     private JsonObject forecastSelectedCity;
     public JsonObject getForecastSelectedCity(){
         return forecastSelectedCity;
@@ -77,6 +82,11 @@ public class MainMenuFrame extends JFrame {
     private SelectCityListener selectCityListener;
     public SelectCityListener getSelectCityListener(){
         return selectCityListener;
+    }
+    
+    private ForecastWeatherClickListener forecastWeatherClickListener;
+    public ForecastWeatherClickListener getForecastWeatherClickListener(){
+        return forecastWeatherClickListener;
     }
     
     public void setForecastSelectedCity(JsonObject obj){
@@ -111,6 +121,14 @@ public class MainMenuFrame extends JFrame {
     
     public void initializeSelectCityListener(ArrayList<String> list_selection, JList<String> list_city){
         selectCityListener = new SelectCityListener(this, list_selection, list_city);
+    }
+    
+    public void initializeForecastWeatherClickListener(){
+        forecastWeatherClickListener = new ForecastWeatherClickListener(this);
+    }
+    
+    public void initializeForecastWeatherDialog(){
+        forecastWeatherDialog = new ForecastWeatherDialog(this, true, forecastSelectedCity);
     }
     
     

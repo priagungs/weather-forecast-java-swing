@@ -21,6 +21,8 @@ public class CurrentWeatherDialog extends JDialog {
         super(frame, modal);
         this.frame = frame;
         initComponents(); 
+        frame.initializeForecastWeatherClickListener();
+        forecastWeatherBtn.addActionListener(frame.getForecastWeatherClickListener());
         setVisible(false);
     }
 
@@ -31,17 +33,6 @@ public class CurrentWeatherDialog extends JDialog {
         forecastWeatherBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-//
-//        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-//        jPanel1.setLayout(jPanel1Layout);
-//        jPanel1Layout.setHorizontalGroup(
-//            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-//            .addGap(0, 393, Short.MAX_VALUE)
-//        );
-//        jPanel1Layout.setVerticalGroup(
-//            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-//            .addGap(0, 331, Short.MAX_VALUE)
-//        );
 
         forecastWeatherBtn.setText("Forecast Weather");
 

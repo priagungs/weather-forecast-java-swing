@@ -168,5 +168,7 @@ public class WeatherDetailPanel extends javax.swing.JPanel {
     private javax.swing.JLabel windDirection;
     private javax.swing.JLabel windSpeed;
     // End of variables declaration//GEN-END:variables
-
+    public void printtest(){
+        System.out.println(temperature.getText());
+    }
 }

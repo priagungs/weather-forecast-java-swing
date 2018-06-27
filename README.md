@@ -28,14 +28,14 @@ This package contains classes which is used for gathering data from Open Weather
 - [x] class MainMenuFrame
 - [x] class SearchClickListener
 - [x] class SelectCityListener
-- [ ] class ViewForecastListener
+- [x] class ForecastWeatherClickListener
 ## weather.forecast.MainMenu
 - [x] class SearchPanel
 - [x] class CityResultDialog
 ## weather.forecast.DetailedCity
 - [x] class WeatherDetailPanel
 - [x] class CurrentWeatherDialog
-- [ ] class DateSelectionPanel
-- [ ] class ForecastWeatherDialog
+- [x] class DateSelectionPanel
+- [x] class ForecastWeatherDialog
 ## weather.forecast.model
 - [x] class WeatherData
