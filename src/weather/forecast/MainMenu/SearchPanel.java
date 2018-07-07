@@ -98,4 +98,8 @@ public class SearchPanel extends javax.swing.JPanel {
         return textField;
     }
     
+    public void setTextField(JTextField field){
+        textField = field;
+    }
+    
 }

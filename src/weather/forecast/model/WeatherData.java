@@ -52,7 +52,7 @@ public class WeatherData {
                 JsonReader reader = Json.createReader(new StringReader(currStr));
                 JsonObject data = reader.readObject();
                 
-                if(data.getInt("cod") == 200){
+                if(data.getInt("cod") == 200) {
                     currDataBuilder.add(data);
                 }
                 reader.close();
@@ -109,18 +109,4 @@ public class WeatherData {
         in.close();
         return data;
     }
-    
-//        
-//        // get forecast weather data 3 hours/5 days
-//        // url = api.openweathermap.org/data/2.5/forecast?q={city_name}&APPID=3506dfa8bbebf7709e6fba904a68559a
-//        String forecastStr = null;
-//        try {
-//            forecastStr = getData("http://api.openweathermap.org/data/2.5/forecast?q=" + query + "&APPID=3506dfa8bbebf7709e6fba904a68559a");
-//        } catch (IOException ex) {
-//            Logger.getLogger(SearchClickListener.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        reader = Json.createReader(new StringReader(forecastStr));
-//        JsonObject forecastData = reader.readObject();
-//        reader.close();
-    
 }
