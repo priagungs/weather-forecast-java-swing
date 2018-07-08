@@ -56,3 +56,9 @@ cd dist
 java -jar weather-forecast.jar
 ```
 
+# Screenshot
+![alt text](screenshot/Screenshot_1.jpg)
+![alt text](screenshot/Screenshot_2.jpg)
+![alt text](screenshot/Screenshot_3.jpg)
+![alt text](screenshot/Screenshot_4.jpg)
+
