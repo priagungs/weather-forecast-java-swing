@@ -41,7 +41,7 @@ This package contains classes which is used for gathering data from Open Weather
 - [x] class WeatherData
 
 # JDepend Analysis Result
-It can be found in [here] (jdepend)
+It can be found in `jdepend` directory
 
 # How To Compile and Run the Application
 Clone the repo and go to 'dist' directory
