@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="java.awt">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.awt.event">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.net">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.text">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.logging">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.accessibility">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.json">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.swing">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.swing.event">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="weather.forecast.DetailedCity">
+            <Stats>
+                <TotalClasses>7</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>8</Ce>
+                <A>0</A>
+                <I>0.89</I>
+                <D>0.11</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CurrentWeatherDialog.java">
+                    weather.forecast.DetailedCity.CurrentWeatherDialog
+                </Class>
+                <Class sourceFile="DateSelectionPanel.java">
+                    weather.forecast.DetailedCity.DateSelectionPanel
+                </Class>
+                <Class sourceFile="DateSelectionPanel.java">
+                    weather.forecast.DetailedCity.DateSelectionPanel$1
+                </Class>
+                <Class sourceFile="ForecastWeatherDialog.java">
+                    weather.forecast.DetailedCity.ForecastWeatherDialog
+                </Class>
+                <Class sourceFile="ForecastWeatherDialog.java">
+                    weather.forecast.DetailedCity.ForecastWeatherDialog$1
+                </Class>
+                <Class sourceFile="ForecastWeatherDialog.java">
+                    weather.forecast.DetailedCity.ForecastWeatherDialog$2
+                </Class>
+                <Class sourceFile="WeatherDetailPanel.java">
+                    weather.forecast.DetailedCity.WeatherDetailPanel
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.awt</Package>
+                <Package>java.lang</Package>
+                <Package>java.text</Package>
+                <Package>java.util</Package>
+                <Package>javax.json</Package>
+                <Package>javax.swing</Package>
+                <Package>javax.swing.event</Package>
+                <Package>weather.forecast.main</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>weather.forecast.main</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="weather.forecast.MainMenu">
+            <Stats>
+                <TotalClasses>5</TotalClasses>
+                <ConcreteClasses>5</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>8</Ce>
+                <A>0</A>
+                <I>0.89</I>
+                <D>0.11</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CityResultDialog.java">
+                    weather.forecast.MainMenu.CityResultDialog
+                </Class>
+                <Class sourceFile="CityResultDialog.java">
+                    weather.forecast.MainMenu.CityResultDialog$1
+                </Class>
+                <Class sourceFile="CityResultDialog.java">
+                    weather.forecast.MainMenu.CityResultDialog$2
+                </Class>
+                <Class sourceFile="SearchPanel.java">
+                    weather.forecast.MainMenu.SearchPanel
+                </Class>
+                <Class sourceFile="SearchPanel.java">
+                    weather.forecast.MainMenu.SearchPanel$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.awt</Package>
+                <Package>java.awt.event</Package>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>javax.accessibility</Package>
+                <Package>javax.json</Package>
+                <Package>javax.swing</Package>
+                <Package>weather.forecast.main</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>weather.forecast.main</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="weather.forecast.main">
+            <Stats>
+                <TotalClasses>5</TotalClasses>
+                <ConcreteClasses>5</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>11</Ce>
+                <A>0</A>
+                <I>0.85</I>
+                <D>0.15</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ForecastWeatherClickListener.java">
+                    weather.forecast.main.ForecastWeatherClickListener
+                </Class>
+                <Class sourceFile="MainMenuFrame.java">
+                    weather.forecast.main.MainMenuFrame
+                </Class>
+                <Class sourceFile="MainMenuFrame.java">
+                    weather.forecast.main.MainMenuFrame$1
+                </Class>
+                <Class sourceFile="SearchClickListener.java">
+                    weather.forecast.main.SearchClickListener
+                </Class>
+                <Class sourceFile="SelectCityListener.java">
+                    weather.forecast.main.SelectCityListener
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.awt</Package>
+                <Package>java.awt.event</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>java.util.logging</Package>
+                <Package>javax.json</Package>
+                <Package>javax.swing</Package>
+                <Package>weather.forecast.DetailedCity</Package>
+                <Package>weather.forecast.MainMenu</Package>
+                <Package>weather.forecast.model</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>weather.forecast.DetailedCity</Package>
+                <Package>weather.forecast.MainMenu</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="weather.forecast.model">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>5</Ce>
+                <A>0</A>
+                <I>0.83</I>
+                <D>0.17</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="WeatherData.java">
+                    weather.forecast.model.WeatherData
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.net</Package>
+                <Package>java.util</Package>
+                <Package>javax.json</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>weather.forecast.main</Package>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="weather.forecast.DetailedCity">
+            <Package>weather.forecast.main</Package>
+            <Package>weather.forecast.DetailedCity</Package>
+        </Package>
+
+        <Package Name="weather.forecast.MainMenu">
+            <Package>weather.forecast.main</Package>
+            <Package>weather.forecast.DetailedCity</Package>
+            <Package>weather.forecast.main</Package>
+        </Package>
+
+        <Package Name="weather.forecast.main">
+            <Package>weather.forecast.DetailedCity</Package>
+            <Package>weather.forecast.main</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>

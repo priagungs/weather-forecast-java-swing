@@ -1,0 +1,141 @@
+
+digraph g {
+        graph [
+	    rankdir = "LR"
+	];
+	node [
+	    fontsize = "12"
+	    fontname = "Courier"
+	    shape = "ellipse"
+	];
+	edge[];
+	"java.awt" [
+        label="java.awt | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.awt.event" [
+        label="java.awt.event | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.io" [
+        label="java.io | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.lang" [
+        label="java.lang | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.net" [
+        label="java.net | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.text" [
+        label="java.text | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.util" [
+        label="java.util | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.util.logging" [
+        label="java.util.logging | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "javax.accessibility" [
+        label="javax.accessibility | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "javax.json" [
+        label="javax.json | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "javax.swing" [
+        label="javax.swing | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "javax.swing.event" [
+        label="javax.swing.event | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "weather.forecast.DetailedCity" [
+        label="weather.forecast.DetailedCity | Total Classes: 7"
+	shape="record"
+	color=".99 0.11 .9"
+	style=filled
+    ];
+    "weather.forecast.DetailedCity" -> "java.awt"
+    "weather.forecast.DetailedCity" -> "java.lang"
+    "weather.forecast.DetailedCity" -> "java.text"
+    "weather.forecast.DetailedCity" -> "java.util"
+    "weather.forecast.DetailedCity" -> "javax.json"
+    "weather.forecast.DetailedCity" -> "javax.swing"
+    "weather.forecast.DetailedCity" -> "javax.swing.event"
+    "weather.forecast.DetailedCity" -> "weather.forecast.main"
+    "weather.forecast.MainMenu" [
+        label="weather.forecast.MainMenu | Total Classes: 5"
+	shape="record"
+	color=".99 0.11 .9"
+	style=filled
+    ];
+    "weather.forecast.MainMenu" -> "java.awt"
+    "weather.forecast.MainMenu" -> "java.awt.event"
+    "weather.forecast.MainMenu" -> "java.lang"
+    "weather.forecast.MainMenu" -> "java.util"
+    "weather.forecast.MainMenu" -> "javax.accessibility"
+    "weather.forecast.MainMenu" -> "javax.json"
+    "weather.forecast.MainMenu" -> "javax.swing"
+    "weather.forecast.MainMenu" -> "weather.forecast.main"
+    "weather.forecast.main" [
+        label="weather.forecast.main | Total Classes: 5"
+	shape="record"
+	color=".99 0.15 .9"
+	style=filled
+    ];
+    "weather.forecast.main" -> "java.awt"
+    "weather.forecast.main" -> "java.awt.event"
+    "weather.forecast.main" -> "java.io"
+    "weather.forecast.main" -> "java.lang"
+    "weather.forecast.main" -> "java.util"
+    "weather.forecast.main" -> "java.util.logging"
+    "weather.forecast.main" -> "javax.json"
+    "weather.forecast.main" -> "javax.swing"
+    "weather.forecast.main" -> "weather.forecast.DetailedCity"
+    "weather.forecast.main" -> "weather.forecast.MainMenu"
+    "weather.forecast.main" -> "weather.forecast.model"
+    "weather.forecast.model" [
+        label="weather.forecast.model | Total Classes: 1"
+	shape="record"
+	color=".99 0.17 .9"
+	style=filled
+    ];
+    "weather.forecast.model" -> "java.io"
+    "weather.forecast.model" -> "java.lang"
+    "weather.forecast.model" -> "java.net"
+    "weather.forecast.model" -> "java.util"
+    "weather.forecast.model" -> "javax.json"
+    
+}
